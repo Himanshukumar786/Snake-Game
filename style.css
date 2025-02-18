@@ -26,14 +26,37 @@ body {
 }
 
 .start-button {
-    padding: 15px 30px;
-    font-size: 18px;
     background-color: orangered;
     color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
+    padding: 15px 30px;
     text-align: center;
     text-decoration: none;
+    font-size: 18px;
     margin: 4px 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+}
+
+.food {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.snake {
+    width: 20px;
+    height: 20px;
+    background-color: chartreuse;
+    position: absolute;
+    border-radius: 5px;
 }
